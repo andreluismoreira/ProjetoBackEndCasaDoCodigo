@@ -1,0 +1,12 @@
+com\andre\shoppingclient\DTO\CadastrarProductDTO.class
+com\andre\shoppingclient\DTO\ErrorDTO.class
+com\andre\shoppingclient\DTO\ItemDTO.class
+com\andre\shoppingclient\DTO\ShopReportDTO.class
+com\andre\shoppingclient\DTO\CadastrarUserDTO.class
+com\andre\shoppingclient\DTO\UserDTO.class
+com\andre\shoppingclient\Exception\ProductNotFoundException.class
+com\andre\shoppingclient\Exception\UserNotFoundException.class
+com\andre\shoppingclient\DTO\CategoryDTO.class
+com\andre\shoppingclient\DTO\ShopDTO.class
+com\andre\shoppingclient\Exception\CategoryNotFoundException.class
+com\andre\shoppingclient\DTO\ProductDTO.class
