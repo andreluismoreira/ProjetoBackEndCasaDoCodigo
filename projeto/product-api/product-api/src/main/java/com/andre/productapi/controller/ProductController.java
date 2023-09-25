@@ -3,7 +3,6 @@ package com.andre.productapi.controller;
 import com.andre.productapi.service.ProductService;
 import com.andre.shoppingclient.DTO.CadastrarProductDTO;
 import com.andre.shoppingclient.DTO.ProductDTO;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +30,7 @@ public class ProductController {
     }
 
     @PostMapping("/product")
-    public ProductDTO createProduct(@Valid @RequestBody CadastrarProductDTO dto){
+    public ProductDTO createProduct(@RequestBody CadastrarProductDTO dto){
         return service.save(dto);
     }
 
