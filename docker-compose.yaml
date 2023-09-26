@@ -39,8 +39,8 @@ services:
       POSTGRES_URL: jdbc:postgresql://postgres:5432/
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      PRODUCT_API_URL: product:8081
-      USER_API_URL: user:8080
+      PRODUCT_API_URL: http://product:8081
+      USER_API_URL: http://user:8080
     depends_on:
       - postgres
 

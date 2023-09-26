@@ -2,6 +2,7 @@ package com.andre.productapi.controller;
 
 import com.andre.productapi.service.ProductService;
 import com.andre.shoppingclient.DTO.CadastrarProductDTO;
+import com.andre.shoppingclient.DTO.CategoryDTO;
 import com.andre.shoppingclient.DTO.ProductDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,11 @@ public class ProductController {
     @GetMapping("/product")
     public List<ProductDTO> getProducts(){
         return service.listAll();
+    }
+
+    @GetMapping("/product/categories")
+    public List<CategoryDTO> getCategories(){
+        return service.listAllCategories();
     }
 
     @GetMapping("/category/{categoryId}")
