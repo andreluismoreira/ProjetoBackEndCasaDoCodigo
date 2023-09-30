@@ -11,14 +11,14 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class ProductService {
 
-    @Value("$PRODUCT_API_URL:http://localhost:8081/product/")
+    @Value("${PRODUCT_API_URL:http://localhost:8081}")
     private String productApiURL;
 
 
     public ProductDTO getProductByIdentifier (String productIdentifier) {
         try {
             RestTemplate restTemplate = new RestTemplate();
-            String url = productApiURL + productIdentifier;
+            String url = productApiURL + "/product/" + productIdentifier;
 
             ResponseEntity<ProductDTO> response = restTemplate.getForEntity(url, ProductDTO.class);
 
